@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { getAllPokemons, getSelectedPokemonData } from "./api";
-import { Pokemon } from "./Pokemon.model";
+import { getAllPokemons, getSelectedPokemonData } from "./api/api";
+import { Pokemon } from "./models/Pokemon.model";
 
 import "./App.css";
 function App() {
