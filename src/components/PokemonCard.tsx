@@ -19,6 +19,7 @@ const PokemonCard = ({ pokemon }: { pokemon: Pokemon }) => {
       </div>
       <img
         style={{ display: "block", margin: "0 auto" }}
+        id="gif"
         src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${pokemon.id}.gif`}
       />
       <div
