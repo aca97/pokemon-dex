@@ -1,3 +1,30 @@
-.pokemon-container{
+.pokemon-container {
   display: flex;
+  height: 100vh;
+  margin: 150px;
 }
+.pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  flex: 60%;
+  overflow-y: scroll;
+}
+.selected-pokemon {
+  margin: 15px;
+}
+.pokemon-card {
+  text-align: center;
+  margin: 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.pokemon-card:hover {
+  transform: translateY(-5px);
+}
+
+
+
+
+
+
