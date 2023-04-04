@@ -11,11 +11,18 @@
   overflow-y: scroll;
   color: #ffff;
 }
-
+.evolution-chain,
+.evolution-stage {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
 .selected-pokemon {
   margin: 15px;
 }
-
+.pokemon-image-container {
+  margin-right: 10px;
+}
 .background-image {
   top: -5%;
   left: -7%;
@@ -104,23 +111,27 @@
 .pokemon-info {
   background-color: #ffffff;
   border-radius: 15px;
-  width: 250px;
+  width: 280px;
   height: 420px;
 }
 .pokemon-info-top {
   height: 160px;
   border-radius: 15px;
 }
+
 button {
   cursor: pointer;
-  margin:20px 2px;
+  margin: 20px 2px;
   background-color: transparent;
   border: none;
 }
 button.active {
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid black;
 }
-
+.pokemon-name {
+  margin: 10px;
+  font-size: 24px;
+}
 @media screen and (max-width: 1450px) {
   .pokemon-list {
     grid-template-columns: repeat(3, 1fr);

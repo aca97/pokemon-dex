@@ -4,6 +4,7 @@ import { typeColors } from "../models/colors.model";
 import CardButtons from "./CardButton";
 import About from "./AboutSection";
 import BaseStatsSection from "./BaseStatsSection";
+import EvolutionSection from "./EvolutionSection";
 
 const PokemonCard = ({ pokemon }: { pokemon: Pokemon }) => {
   const [activeCard, setActiveCard] = useState("about");
@@ -38,12 +39,7 @@ const PokemonCard = ({ pokemon }: { pokemon: Pokemon }) => {
       <CardButtons activeCard={activeCard} setActiveCard={setActiveCard} />
       {activeCard === "about" && <About pokemon={pokemon} />}
       {activeCard === "baseStats" && <BaseStatsSection stats={pokemon.stats} />}
-      {activeCard === "evolution" && (
-        <div>
-          <h2>Evolution</h2>
-          {/* Here you can add the code for the evolution card */}
-        </div>
-      )}
+      {activeCard === "evolution" && <EvolutionSection id={pokemon.id} />}
     </div>
   );
 };

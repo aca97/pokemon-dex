@@ -14,16 +14,14 @@ export const getAllTypes = async (name: string): Promise<any> => {
   return types;
 };
 
-
-
 export const getSelectedPokemonData = async (id: number): Promise<Pokemon> => {
   const response = await axios.get(`${API_BASE_URL}/pokemon/${id}`);
   return response.data;
 };
 
-export const getEvolutionChainForSelectedPokemon = async (
-  id: number
-): Promise<any> => {
-  const response = await axios.get(`${API_BASE_URL}/evolution-chain/${id}`);
-  return response.data;
-};
+// export const getEvolutionChainForSelectedPokemon = async (
+//   id: number
+// ): Promise<any> => {
+//   const response = await axios.get(`${API_BASE_URL}/pokemon-species/${id}`);
+//   return response.data;
+// };

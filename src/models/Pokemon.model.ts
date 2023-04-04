@@ -6,6 +6,8 @@ export interface Pokemon {
   weight: number;
   abilities: ability[];
   stats: stat[];
+  image: string;
+  min_level: number
 }
 
 export interface ability {

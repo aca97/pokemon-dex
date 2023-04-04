@@ -2,9 +2,7 @@ import React, { useState } from "react";
 
 const CardButtons = ({ activeCard, setActiveCard }: any) => {
   return (
-    <div
-      style={{ display: "flex", justifyContent: "center", margin: "4px 0" }}
-    >
+    <div style={{ display: "flex", justifyContent: "center", margin: "4px 0" }}>
       <button
         className={activeCard === "about" ? "active" : ""}
         onClick={() => setActiveCard("about")}

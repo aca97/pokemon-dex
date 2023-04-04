@@ -32,9 +32,9 @@ const PokemonList = ({ pokemons, onPokemonClick }: any) => {
             style={{ background: backgroundColor }}
           >
             <div className="pokemon-details">
-              <h2 className="pokemon-name">
+              <div className="pokemon-name">
                 {pokemon.name.slice(0, 1).toUpperCase() + pokemon.name.slice(1)}
-              </h2>{" "}
+              </div>{" "}
               <div className="pokemon-types">
                 {pokemonTypes[index]?.map((type: string, index: number) => (
                   <div key={index} className="pokemon-type">
