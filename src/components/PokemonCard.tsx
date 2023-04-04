@@ -15,21 +15,24 @@ const PokemonCard = ({ pokemon }: { pokemon: Pokemon }) => {
         className="pokemon-info-top"
         style={{ textAlign: "center", backgroundColor }}
       >
-        <div>{pokemon.name}</div>
-        <p>#{pokemon.id}</p>
-        <div >
+        <div className="name">
+          {pokemon.name.slice(0, 1).toUpperCase() + pokemon.name.slice(1)}
+          <div>#{pokemon.id.toString().padStart(3, "0")}</div>
+        </div>
+        <div className="info-types">
           {pokemon.types.map((type: any, index: number) => (
             <div className="pokemon-type" key={index}>
               {type.type.name}
             </div>
           ))}
         </div>
-
-        <img
-          style={{ display: "block", margin: "0 auto" }}
-          id="gif"
-          src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${pokemon.id}.gif`}
-        />
+        <div className="img">
+          <img
+            style={{ display: "block", margin: "0 auto" }}
+            id="gif"
+            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${pokemon.id}.gif`}
+          />
+        </div>
       </div>
 
       <CardButtons activeCard={activeCard} setActiveCard={setActiveCard} />
