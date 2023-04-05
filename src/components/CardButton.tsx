@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 const CardButtons = ({ activeCard, setActiveCard }: any) => {
   return (
     <div style={{ display: "flex", justifyContent: "center", margin: "4px 0" }}>

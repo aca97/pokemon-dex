@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Pokemon } from "../models/Pokemon.model";
 import { typeColors } from "../models/colors.model";
 import CardButtons from "./CardButton";

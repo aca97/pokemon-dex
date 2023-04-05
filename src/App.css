@@ -1,7 +1,7 @@
 .pokemon-container {
   display: flex;
   height: 100vh;
-  margin: 150px;
+  margin: 10px 150px;
 }
 
 .pokemon-list {
@@ -118,7 +118,15 @@
   height: 160px;
   border-radius: 15px;
 }
-
+.search-container {
+  margin-left: 20.5%;
+}
+input {
+  margin-top: 20px ;
+  border-radius: 15px;
+  height: 50px;
+  width: 50%;
+}
 button {
   cursor: pointer;
   margin: 20px 2px;
